@@ -1,0 +1,128 @@
+@import "functions";/* file: _functions.scss, must be attached first*/
+@import "variables";
+@import "mixins";
+
+body{
+    font-family: "Myriad Pro";
+    font-size: 14px;
+}
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+}
+.navbar {
+    margin-bottom: 0;   
+}
+.navbar-inverse {
+    min-height: 100px;
+    background-color: $dark-grey;
+    border-color: $dark-grey;
+    border-radius: 0;
+    color: #fff; 
+        font-family: "Myriad Pro";
+        font-size: 15px;
+        line-height: 24px;
+        .navbar-header{
+             a.btn-crimson {
+                color: #fff;
+                background-color: $crimson;
+                border-color: $crimson;
+                border-radius: 0;
+                margin-top: 30px;
+            }
+            button.navbar-toggle {
+                margin-top: 30px;
+            }
+            .navbar-brand{
+                @include small-xs-screens {
+                    font-size: 1.2em;
+                }
+            }
+        }
+           
+        .navbar-nav{
+            
+            li {
+                padding: 33px 0 0 25px;
+                @include md-screens {
+
+                } 
+                @include sm-screens {
+                    padding: 33px 0 0 0;
+                }                   
+            }
+            li a{
+                color: #fff;
+                padding: 7px 12px;
+                &:hover, &:focus{background-color: $bright-grey;}
+                @include md-screens {
+                  padding: 7px;  
+                }
+            }
+            .active a{
+                background-color: $crimson;
+                &:hover, &:focus{background-color: $crimson;}
+            }
+
+        }
+
+        .navbar-brand{
+            color: #fff;
+            font-size: 30px;
+            padding-top: 40px;
+        }
+        .navbar-toggle {
+            position: relative;
+            float: right;
+            padding: 9px 10px;
+            margin-top: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+}
+
+.well{
+    background-color: $grey;
+    form{
+        .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #656565;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #7d7d7d;
+    border-radius: 0;
+        }
+        button.btn-primary {
+    color: #fff;
+    background-color: $crimson;
+    border-color: $crimson;
+        }
+        button.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+    }
+}
+
+

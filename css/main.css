@@ -1,0 +1,624 @@
+/* file: _functions.scss, must be attached first*/
+/*====COLORS=======*/
+body {
+  font-family: "Myriad Pro";
+  font-size: 14px; }
+
+.text-crimson {
+  color: #e14f4f; }
+
+div#top-header {
+  background-color: #1f1f1f; }
+  div#top-header div.wrapper {
+    /*set the width and margins for different screens xs sm md lg*/
+    margin: 0 auto;
+    max-width: 1170px; }
+
+div#mid-header div#heading {
+  color: #fff;
+  width: 390px;
+  background-color: transparent;
+  position: absolute;
+  top: 315px;
+  left: 700px; }
+  @media only screen and (max-width: 2200px) {
+    div#mid-header div#heading {
+      top: 120px;
+      left: 500px; } }
+  @media only screen and (max-width: 1800px) {
+    div#mid-header div#heading {
+      top: 120px;
+      left: 310px; } }
+  @media only screen and (max-width: 1440px) {
+    div#mid-header div#heading {
+      left: 135px; } }
+  @media only screen and (max-width: 1200px) {
+    div#mid-header div#heading {
+      width: 280px; }
+      div#mid-header div#heading h2 {
+        font-size: 18px; }
+      div#mid-header div#heading h4 {
+        font-size: 14px; } }
+  @media only screen and (max-width: 992px) {
+    div#mid-header div#heading {
+      width: 280px;
+      left: 100px; }
+      div#mid-header div#heading h2 {
+        font-size: 18px; }
+      div#mid-header div#heading h4 {
+        font-size: 14px; } }
+  div#mid-header div#heading h6 {
+    background-color: #e14f4f;
+    margin: 2px 0;
+    padding: 8px 10px 6px 10px;
+    max-width: 180px;
+    text-align: center; }
+    @media only screen and (max-width: 992px) {
+      div#mid-header div#heading h6 {
+        padding: 8px 6px 6px 6px; } }
+  div#mid-header div#heading h2 {
+    background-color: #1f1f1f;
+    margin: 1px 0;
+    padding: 15px 0;
+    max-width: 380px;
+    text-align: center; }
+    @media only screen and (max-width: 992px) {
+      div#mid-header div#heading h2 {
+        padding: 5px 0; } }
+  div#mid-header div#heading h4 {
+    background-color: #1f1f1f;
+    margin: 2px 0;
+    padding: 15px 10px;
+    max-width: 270px;
+    text-align: center; }
+    @media only screen and (max-width: 992px) {
+      div#mid-header div#heading h4 {
+        padding: 5px 0; } }
+div#mid-header div#phone-number {
+  width: 177px;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 100px;
+  right: 700px; }
+  div#mid-header div#phone-number a {
+    color: #fff; }
+  @media only screen and (max-width: 2200px) {
+    div#mid-header div#phone-number {
+      right: 500px; } }
+  @media only screen and (max-width: 1800px) {
+    div#mid-header div#phone-number {
+      right: 310px; } }
+  @media only screen and (max-width: 1440px) {
+    div#mid-header div#phone-number {
+      right: 135px; } }
+  @media only screen and (max-width: 1200px) {
+    div#mid-header div#phone-number {
+      right: 50px; } }
+  div#mid-header div#phone-number div.col-sm-3 {
+    background-color: #bd4141;
+    height: 37px; }
+    div#mid-header div#phone-number div.col-sm-3 a .fa {
+      padding-top: 10px;
+      font-size: 18px; }
+  div#mid-header div#phone-number div.col-sm-9 {
+    background-color: #e14f4f;
+    text-align: center;
+    height: 37px;
+    padding-top: 10px; }
+
+section#section1 {
+  padding-top: 45px;
+  text-align: center;
+  padding-bottom: 57px; }
+  section#section1 p {
+    font-size: 16px;
+    color: #a2a2a2; }
+  section#section1 div.row-2 {
+    padding-top: 30px; }
+    section#section1 div.row-2 div.col-sm-4 div.image {
+      text-align: center; }
+    section#section1 div.row-2 div.col-sm-4 div.article h4 {
+      text-align: center;
+      color: #202020; }
+    section#section1 div.row-2 div.col-sm-4 div.article p {
+      padding-top: 10px;
+      text-align: center;
+      color: #777; }
+  section#section1 div.row-3 {
+    padding-top: 45px; }
+    section#section1 div.row-3 div.col-sm-4 div.image {
+      text-align: center; }
+    section#section1 div.row-3 div.col-sm-4 div.article h4 {
+      text-align: center;
+      color: #202020; }
+    section#section1 div.row-3 div.col-sm-4 div.article p {
+      padding-top: 10px;
+      text-align: center;
+      color: #777; }
+
+section#section2 {
+  background-image: url("../img/section-3-bg.gif");
+  background-size: cover;
+  padding-top: 35px;
+  padding-bottom: 20px; }
+  section#section2 div.trainers-header {
+    text-align: center; }
+    section#section2 div.trainers-header h3 {
+      color: #fff;
+      margin-bottom: 0; }
+  section#section2 div#trainers-gallery {
+    padding-top: 48px; }
+    @media only screen and (max-width: 768px) {
+      section#section2 div#trainers-gallery div.column {
+        margin-bottom: 30px; } }
+    section#section2 div#trainers-gallery img {
+      width: 100%; }
+    section#section2 div#trainers-gallery div.figcaption {
+      background-color: #fff;
+      margin-bottom: 30px;
+      padding: 22px 0; }
+      section#section2 div#trainers-gallery div.figcaption a {
+        text-decoration: none; }
+        section#section2 div#trainers-gallery div.figcaption a h5 {
+          color: #202020;
+          margin-top: 0;
+          padding-left: 20px; }
+        section#section2 div#trainers-gallery div.figcaption a h6 {
+          color: #a2a2a2;
+          padding-left: 20px; }
+      @media only screen and (max-width: 1200px) {
+        section#section2 div#trainers-gallery div.figcaption {
+          margin-bottom: 30px;
+          padding: 22px 0; }
+          section#section2 div#trainers-gallery div.figcaption a h5, section#section2 div#trainers-gallery div.figcaption a h6 {
+            padding-left: 5px; } }
+      @media only screen and (max-width: 992px) {
+        section#section2 div#trainers-gallery div.figcaption {
+          margin-bottom: 30px;
+          padding: 5px 0; }
+          section#section2 div#trainers-gallery div.figcaption a h5, section#section2 div#trainers-gallery div.figcaption a h6 {
+            padding-left: 5px; } }
+    section#section2 div#trainers-gallery p {
+      color: #777; }
+    section#section2 div#trainers-gallery div.top div.img-bottom {
+      display: none; }
+    section#section2 div#trainers-gallery div.bottom div.resume-top,
+    section#section2 div#trainers-gallery div.bottom div.resume-bottom {
+      padding: 30px 20px;
+      background-color: #fff;
+      display: none; }
+      @media only screen and (max-width: 1200px) {
+        section#section2 div#trainers-gallery div.bottom div.resume-top,
+        section#section2 div#trainers-gallery div.bottom div.resume-bottom {
+          padding: 5px; } }
+      @media only screen and (max-width: 992px) {
+        section#section2 div#trainers-gallery div.bottom div.resume-top,
+        section#section2 div#trainers-gallery div.bottom div.resume-bottom {
+          font-size: 0.8em; } }
+      section#section2 div#trainers-gallery div.bottom div.resume-top h5,
+      section#section2 div#trainers-gallery div.bottom div.resume-bottom h5 {
+        margin-top: 0;
+        color: #202020; }
+        @media only screen and (max-width: 1200px) {
+          section#section2 div#trainers-gallery div.bottom div.resume-top h5,
+          section#section2 div#trainers-gallery div.bottom div.resume-bottom h5 {
+            margin-top: 12px;
+            margin-bottom: 12px; } }
+        @media only screen and (max-width: 992px) {
+          section#section2 div#trainers-gallery div.bottom div.resume-top h5,
+          section#section2 div#trainers-gallery div.bottom div.resume-bottom h5 {
+            font-size: 0.9em;
+            margin-top: 6px;
+            margin-bottom: 6px; } }
+      section#section2 div#trainers-gallery div.bottom div.resume-top h6,
+      section#section2 div#trainers-gallery div.bottom div.resume-bottom h6 {
+        color: #a2a2a2; }
+        @media only screen and (max-width: 1200px) {
+          section#section2 div#trainers-gallery div.bottom div.resume-top h6,
+          section#section2 div#trainers-gallery div.bottom div.resume-bottom h6 {
+            margin-top: 12px;
+            margin-bottom: 12px; } }
+        @media only screen and (max-width: 992px) {
+          section#section2 div#trainers-gallery div.bottom div.resume-top h6,
+          section#section2 div#trainers-gallery div.bottom div.resume-bottom h6 {
+            font-size: 0.9em;
+            margin-top: 6px;
+            margin-bottom: 6px; } }
+      section#section2 div#trainers-gallery div.bottom div.resume-top p,
+      section#section2 div#trainers-gallery div.bottom div.resume-bottom p {
+        color: #777; }
+      section#section2 div#trainers-gallery div.bottom div.resume-top div.social-media,
+      section#section2 div#trainers-gallery div.bottom div.resume-bottom div.social-media {
+        padding-top: 65px; }
+        @media only screen and (max-width: 1200px) {
+          section#section2 div#trainers-gallery div.bottom div.resume-top div.social-media,
+          section#section2 div#trainers-gallery div.bottom div.resume-bottom div.social-media {
+            padding-top: 30px;
+            padding-bottom: 5px; } }
+        @media only screen and (max-width: 992px) {
+          section#section2 div#trainers-gallery div.bottom div.resume-top div.social-media,
+          section#section2 div#trainers-gallery div.bottom div.resume-bottom div.social-media {
+            padding-top: 5px;
+            padding-bottom: 5px; } }
+        section#section2 div#trainers-gallery div.bottom div.resume-top div.social-media a,
+        section#section2 div#trainers-gallery div.bottom div.resume-bottom div.social-media a {
+          color: #777;
+          text-decoration: none; }
+          section#section2 div#trainers-gallery div.bottom div.resume-top div.social-media a:hover,
+          section#section2 div#trainers-gallery div.bottom div.resume-bottom div.social-media a:hover {
+            color: #e14f4f; }
+          section#section2 div#trainers-gallery div.bottom div.resume-top div.social-media a .fa,
+          section#section2 div#trainers-gallery div.bottom div.resume-bottom div.social-media a .fa {
+            font-size: 16px;
+            padding-right: 6px;
+            padding-left: 6px; }
+            @media only screen and (max-width: 992px) {
+              section#section2 div#trainers-gallery div.bottom div.resume-top div.social-media a .fa,
+              section#section2 div#trainers-gallery div.bottom div.resume-bottom div.social-media a .fa {
+                font-size: 0.8em;
+                padding-right: 4px;
+                padding-left: 4px; } }
+  section#section2 div#trainers-gallery-xs {
+    color: #a2a2a2;
+    font-size: 1.2em; }
+    @media only screen and (max-width: 768px) {
+      section#section2 div#trainers-gallery-xs div.media-object {
+        float: left; } }
+    @media only screen and (max-width: 480px) {
+      section#section2 div#trainers-gallery-xs div.media-object {
+        float: none; } }
+    section#section2 div#trainers-gallery-xs div.media-object img {
+      width: 100%; }
+      @media only screen and (max-width: 480px) {
+        section#section2 div#trainers-gallery-xs div.media-object img {
+          width: 70%;
+          margin: 0 auto; } }
+    section#section2 div#trainers-gallery-xs div.media-object div.social-media a {
+      color: #a2a2a2;
+      text-decoration: none; }
+      section#section2 div#trainers-gallery-xs div.media-object div.social-media a .fa {
+        font-size: 1.2em;
+        padding: 5px 1px; }
+        @media only screen and (max-width: 480px) {
+          section#section2 div#trainers-gallery-xs div.media-object div.social-media a .fa {
+            padding: 6px 12px; } }
+    section#section2 div#trainers-gallery-xs div.media-body {
+      padding-left: 5px; }
+      @media only screen and (max-width: 480px) {
+        section#section2 div#trainers-gallery-xs div.media-body {
+          text-align: center; } }
+      section#section2 div#trainers-gallery-xs div.media-body h5 {
+        color: #fff; }
+      section#section2 div#trainers-gallery-xs div.media-body h6 {
+        color: #fff; }
+
+section#section3 {
+  padding-top: 60px;
+  padding-bottom: 65px; }
+  section#section3 div#gallery-header {
+    text-align: center; }
+    section#section3 div#gallery-header h3 {
+      color: #202020;
+      margin-bottom: 0; }
+    section#section3 div#gallery-header div#header-paragraph {
+      color: #777; }
+  section#section3 div#gallery {
+    padding-top: 35px; }
+    section#section3 div#gallery div.card {
+      padding-top: 20px; }
+      section#section3 div#gallery div.card img.img-zoom {
+        position: absolute;
+        /* Position the background text */
+        bottom: 50px;
+        /* At the bottom. Use top:0 to append it to the top */
+        right: 0px;
+        width: 100%;
+        /* Full width */
+        padding: 14px;
+        display: none; }
+        @media only screen and (max-width: 992px) {
+          section#section3 div#gallery div.card img.img-zoom {
+            bottom: 42px;
+            padding: 15px; } }
+    section#section3 div#gallery div.caption {
+      color: #a2a2a2; }
+      section#section3 div#gallery div.caption a {
+        color: #202020;
+        text-decoration: none; }
+      @media only screen and (max-width: 992px) {
+        section#section3 div#gallery div.caption {
+          font-size: 0.8em; }
+          section#section3 div#gallery div.caption h5 {
+            font-size: .9em; } }
+  section#section3 div.carousel {
+    padding: 0; }
+    section#section3 div.carousel div.carousel-inner div.item img {
+      width: 100%; }
+    section#section3 div.carousel a.carousel-control .fa {
+      font-size: 1.2em; }
+    section#section3 div.carousel a.carousel-control .fa-chevron-circle-right {
+      right: 30px; }
+
+section#section4 {
+  color: #fff;
+  background-color: #e14f4f;
+  padding-top: 65px;
+  padding-bottom: 60px; }
+  section#section4 div#pricing-header {
+    text-align: center;
+    padding-bottom: 50px; }
+    section#section4 div#pricing-header h3 {
+      color: #fff;
+      margin-bottom: 0; }
+  section#section4 div#pricing-plans {
+    background-color: #e14f4f; }
+    section#section4 div#pricing-plans div.pricing {
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0; }
+      section#section4 div#pricing-plans div.pricing h1 {
+        padding-top: 30px; }
+      section#section4 div#pricing-plans div.pricing div.pricing-details {
+        padding-top: 30px;
+        padding-bottom: 15px; }
+        section#section4 div#pricing-plans div.pricing div.pricing-details p {
+          padding-top: 5px; }
+          section#section4 div#pricing-plans div.pricing div.pricing-details p .fa {
+            margin-right: 20px; }
+      section#section4 div#pricing-plans div.pricing a.btn-crimson {
+        color: #fff;
+        text-decoration: none;
+        background-color: #e14f4f;
+        margin-top: 25px;
+        padding-top: 20px;
+        padding-bottom: 15px; }
+        section#section4 div#pricing-plans div.pricing a.btn-crimson:hover {
+          background-color: #fff;
+          color: #e14f4f; }
+        @media only screen and (max-width: 768px) {
+          section#section4 div#pricing-plans div.pricing a.btn-crimson {
+            font-size: 1.2em; } }
+    section#section4 div#pricing-plans div#standard,
+    section#section4 div#pricing-plans div#advanced,
+    section#section4 div#pricing-plans div#business {
+      background-color: #d14343;
+      padding: 38px 70px 45px 70px;
+      margin-left: 15px;
+      margin-right: 15px; }
+      @media only screen and (max-width: 1200px) {
+        section#section4 div#pricing-plans div#standard,
+        section#section4 div#pricing-plans div#advanced,
+        section#section4 div#pricing-plans div#business {
+          padding: 20px 10px; } }
+      @media only screen and (max-width: 768px) {
+        section#section4 div#pricing-plans div#standard,
+        section#section4 div#pricing-plans div#advanced,
+        section#section4 div#pricing-plans div#business {
+          margin-top: 20px;
+          font-size: 1.5em; } }
+
+section#section5 {
+  padding-top: 38px;
+  padding-bottom: 75px; }
+  section#section5 div#partners-header {
+    text-align: center; }
+    section#section5 div#partners-header h3 {
+      color: #202020;
+      margin-bottom: 0; }
+  section#section5 div#partners {
+    padding-top: 20px; }
+    section#section5 div#partners div.carousel {
+      padding: 0; }
+      section#section5 div#partners div.carousel div.carousel-inner div.item {
+        padding-top: 20px;
+        text-align: center; }
+        section#section5 div#partners div.carousel div.carousel-inner div.item a img {
+          padding-left: 15px;
+          padding-right: 15px; }
+      section#section5 div#partners div.carousel .carousel-control.left,
+      section#section5 div#partners div.carousel .carousel-control.right {
+        background-image: none; }
+      section#section5 div#partners div.carousel a.carousel-control {
+        background-color: #fff;
+        width: 3%; }
+        section#section5 div#partners div.carousel a.carousel-control .fa {
+          color: #a2a2a2;
+          font-size: 1.2em; }
+        section#section5 div#partners div.carousel a.carousel-control .fa-chevron-right,
+        section#section5 div#partners div.carousel a.carousel-control .fa-chevron-left {
+          position: absolute;
+          top: 50%;
+          z-index: 5;
+          display: inline-block; }
+
+footer {
+  background-color: #202020; }
+  @media only screen and (max-width: 768px) {
+    footer {
+      text-align: center; } }
+  footer div#top-footer {
+    color: #fff;
+    font-size: 13px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #323232; }
+    footer div#top-footer div#top-footer-paragraph {
+      padding-top: 0; }
+      footer div#top-footer div#top-footer-paragraph p {
+        color: #c6c6c6; }
+    footer div#top-footer div#large-icon .fa {
+      font-size: 24px;
+      padding-top: 5px;
+      padding-right: 10px; }
+    footer div#top-footer div.row div#social-icons {
+      text-align: right;
+      padding: 5px 0 0 0; }
+      @media only screen and (max-width: 768px) {
+        footer div#top-footer div.row div#social-icons {
+          text-align: center; } }
+      footer div#top-footer div.row div#social-icons a {
+        color: #fff;
+        text-decoration: none; }
+        footer div#top-footer div.row div#social-icons a:hover {
+          color: #e14f4f; }
+        footer div#top-footer div.row div#social-icons a .fa {
+          padding: 0 10px; }
+  footer div#map-container {
+    min-height: 426px;
+    /* min-height to remove later*/
+    max-width: 1252px;
+    margin: 0 auto;
+    padding-top: 60px;
+    background-image: url("../img/world-map-dark.png");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    footer div#map-container div#mid-footer {
+      padding-bottom: 100px; }
+      footer div#map-container div#mid-footer div#contact-info h5 {
+        color: #fff; }
+      footer div#map-container div#mid-footer div#contact-info p {
+        color: #c6c6c6;
+        font-size: 12px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        padding-right: 100px; }
+        @media only screen and (max-width: 992px) {
+          footer div#map-container div#mid-footer div#contact-info p {
+            padding-right: 10px; } }
+      footer div#map-container div#mid-footer div#contact-info a {
+        color: #c6c6c6;
+        font-size: 12px;
+        text-decoration: none; }
+        footer div#map-container div#mid-footer div#contact-info a:hover {
+          color: #e14f4f; }
+      footer div#map-container div#mid-footer div#contact-form {
+        padding-left: 20px;
+        padding-right: 0; }
+        @media only screen and (max-width: 768px) {
+          footer div#map-container div#mid-footer div#contact-form {
+            padding-right: 50px;
+            padding-left: 50px; } }
+        footer div#map-container div#mid-footer div#contact-form h5 {
+          color: #fff; }
+        footer div#map-container div#mid-footer div#contact-form form.form-inline {
+          padding-top: 22px; }
+          footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group .form-control {
+            width: 100%;
+            display: block;
+            height: 34px;
+            padding: 12px 12px;
+            font-size: 12px;
+            line-height: 1.42857143;
+            color: #656565;
+            background-color: transparent;
+            background-image: none;
+            border: 1px solid #7d7d7d;
+            border-radius: 0; }
+          @media only screen and (max-width: 768px) {
+            footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#name, footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#email {
+              margin-bottom: 15px; } }
+          @media only screen and (max-width: 1200px) {
+            footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#email {
+              padding-left: 0;
+              padding-right: 0; } }
+          @media only screen and (max-width: 768px) {
+            footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#email {
+              padding-left: 15px;
+              padding-right: 15px; } }
+          footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#comments {
+            padding-top: 15px; }
+            @media only screen and (max-width: 1200px) {
+              footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#comments {
+                padding-right: 0; } }
+            @media only screen and (max-width: 768px) {
+              footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#comments {
+                padding-right: 15px; } }
+            footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#comments textarea.form-control {
+              display: block;
+              width: 100%;
+              height: auto;
+              padding: 6px 12px;
+              font-size: 14px;
+              line-height: 1.42857143;
+              color: #656565;
+              background-color: transparent;
+              background-image: none;
+              border: 1px solid #7d7d7d;
+              border-radius: 0; }
+          footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#submit {
+            padding-top: 15px; }
+            footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#submit button.btn-crimson {
+              color: #fff;
+              background-color: #e14f4f;
+              border-radius: 0; }
+              @media only screen and (max-width: 1200px) {
+                footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#submit button.btn-crimson {
+                  font-size: 12px; } }
+              @media only screen and (max-width: 992px) {
+                footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#submit button.btn-crimson {
+                  padding-left: 3px; } }
+            footer div#map-container div#mid-footer div#contact-form form.form-inline div.form-group div#submit p {
+              font-size: 12px;
+              padding-top: 20px;
+              color: #707070; }
+    @media only screen and (max-width: 1200px) {
+      footer div#map-container div#bottom-footer {
+        text-align: center; } }
+    footer div#map-container div#bottom-footer p {
+      font-size: 12px;
+      color: #707070; }
+    footer div#map-container div#bottom-footer div#credits a {
+      color: #707070; }
+      footer div#map-container div#bottom-footer div#credits a:hover {
+        color: #e14f4f; }
+
+/*=========== modals: =================== */
+div#galleryModal div.modal-dialog div.modal-content,
+div#creditsAndAttributions div.modal-dialog div.modal-content {
+  border-radius: 0;
+  background-color: #ce6263;
+  opacity: 0.9; }
+  div#galleryModal div.modal-dialog div.modal-content div.modal-body,
+  div#creditsAndAttributions div.modal-dialog div.modal-content div.modal-body {
+    padding: 0; }
+    div#galleryModal div.modal-dialog div.modal-content div.modal-body img,
+    div#creditsAndAttributions div.modal-dialog div.modal-content div.modal-body img {
+      width: 100%; }
+  div#galleryModal div.modal-dialog div.modal-content div.modal-footer,
+  div#creditsAndAttributions div.modal-dialog div.modal-content div.modal-footer {
+    padding: 0 15px;
+    border-top: 0;
+    color: #a2a2a2;
+    text-align: left; }
+    div#galleryModal div.modal-dialog div.modal-content div.modal-footer a,
+    div#creditsAndAttributions div.modal-dialog div.modal-content div.modal-footer a {
+      color: #202020;
+      text-decoration: none; }
+
+div#creditsAndAttributions {
+  text-align: center; }
+
+/*=========== modals end =================== */
+/*=========== go to top: =================== */
+div.back-to-top {
+  background-color: transparent;
+  position: fixed;
+  bottom: 10%;
+  right: 30%; }
+  @media only screen and (max-width: 2200px) {
+    div.back-to-top {
+      right: 22%; } }
+  @media only screen and (max-width: 1800px) {
+    div.back-to-top {
+      right: 15%; } }
+  @media only screen and (max-width: 1440px) {
+    div.back-to-top {
+      right: 5%; } }
+  div.back-to-top a {
+    color: #777;
+    font-size: 1.2em; }
+    div.back-to-top a:hover {
+      color: #e14f4f; }
+
+/*# sourceMappingURL=main.css.map */
